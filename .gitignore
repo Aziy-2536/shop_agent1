@@ -1,0 +1,104 @@
+# ============================================================
+# 敏感信息与本地环境
+# ============================================================
+# 真实环境变量与凭据（.env.example 也不再进入仓库，模板可保留在本地）
+.env
+.env.*
+*.env
+.envrc
+
+# 密钥、证书与凭据文件
+secrets/
+.secrets/
+*.secret
+*.secrets
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+id_rsa*
+id_ed25519*
+credentials.json
+service-account*.json
+*-credentials.json
+.netrc
+.pgpass
+.pypirc
+
+# 本地数据库与持久化数据
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+pgdata/
+
+# ============================================================
+# Python 构建与缓存
+# ============================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+.eggs/
+*.egg-info/
+*.egg
+.venv/
+venv/
+env/
+ENV/
+
+# 测试、类型检查与覆盖率产物
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.hypothesis/
+.cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+junit.xml
+
+# ============================================================
+# IDE / 本地工具配置
+# ============================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.claude/settings.local.json
+.claude/*.local.json
+CLAUDE.local.md
+
+# ============================================================
+# 日志与临时文件
+# ============================================================
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+*.bak
+
+# ============================================================
+# 操作系统
+# ============================================================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Jupyter
+.ipynb_checkpoints/
+
+# 本地 Docker Compose 覆盖配置（可能包含个人环境参数）
+compose.override.yaml
+compose.override.yml
+docker-compose.override.yml
